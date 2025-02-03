@@ -1,0 +1,156 @@
+
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; /* Set Poppins font */
+        }
+
+        body {
+            background:url("C:/Users/ISHYA/Documents/I_Blueprint/project.jpeg") no-repeat;
+            background-size:cover;
+            backdrop-filter: blur(5px);
+            color: white;
+            text-align: center;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            padding-top: 130px; /* Adjust padding to ensure content is not overlapped by header */
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            
+            z-index: 1000;
+            box-sizing: border-box;
+            /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adding shadow to header */
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: cyan;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s, transform 0.3s; /* Added transform for hover */
+        }
+
+        .nav a:hover {
+            color: cyan;
+            transform: scale(1.1); /* Scaling effect on hover */
+        }
+
+        /* Main Content */
+        .content {
+            padding: 50px 20px;
+        }
+
+        .typing-text {
+            font-size: 50px;
+            font-weight: bold;
+            color: cyan;
+            text-transform: uppercase;
+        }
+
+        .subtext {
+            font-size: 22px;
+            margin-top: 20px;
+            line-height: 28px;
+            color: #ddd;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Start Button */
+        .start-btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: cyan;
+            color: black;
+            border: none;
+            border-radius: 30px; /* More rounded button */
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .start-btn:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.1); /* Button scaling effect */
+        }
+
+        /* Flow Layout for Sections */
+        .sections-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            padding: 50px;
+            /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Shadow for sections */
+        }
+
+        .section {
+            flex: 1;
+            padding: 40px;
+            border: 2px solid cyan;
+            margin: 15px;
+            text-align: center;
+            /*background: black;*/
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            transition: transform 0.3s; /* Add smooth transition for hover effect */
+        }
+
+        .section:hover {
+            transform: scale(1.05); /* Scale the section on hover */
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: cyan;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: white;
+            line-height: 1.5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sections-container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .section {
+                width: 90%;
+            }
+        }
+    .start{
+        text-decoration: none;
+        color:black;
+    }
