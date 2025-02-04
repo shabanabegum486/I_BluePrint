@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i_Blueprint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: black;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .logo {
+            color: cyan;
+            font-size: 24px;
+            font-weight: 600;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .tagline {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            font-size: 14px;
+            color: white;
+            opacity: 0.7;
+        }
+
+        .container {
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            width: 80%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .input-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .prompt-box {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+            height: 100px;
+            background-color: black;
+            border: 1px solid cyan;
+            color: white;
+            padding-right: 50px;
+        }
+
+        .inside-btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: cyan;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .inside-btn:hover {
+            background-color: white;
+        }
+
+        .submit-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: cyan;
+            color: black;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .submit-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 12px;
+            color: white;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">I_BluePrint</div>
+    </header>
+    <div class="container">
+        <div class="text">What do you want to develop?</div>
+        <div class="input-wrapper">
+            <input type="text" class="prompt-box" placeholder="Write your prompt here">
+            <button class="inside-btn" onclick="alert('Still developing')">-></button>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        © 2024 I_BluePrint. All rights reserved.
+    </footer>
+</body>
+</html>
