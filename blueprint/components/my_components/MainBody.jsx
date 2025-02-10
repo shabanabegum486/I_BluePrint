@@ -35,7 +35,31 @@ const MainBody = () => {
 
   
 
-  const createWorkspace = useMutation(api.workspace.createWorkspace)
+  const createWorkspace = useMutation(api.workspace.createWorkspace);
+
+  const handleSubmit = async() => {
+    console.log("Submitted:", inputText);
+    setOpenDialog(true);
+  //   const workspaceId = await createWorkspace({
+  //     user: userDetails?.uid,
+  //     messages: [{
+  //        role: "user",
+  //       content: inputText
+  //     }]
+  // })
+
+  // console.log(workspaceId);
+  // router.push("/workspace/"+workspaceId);
+
+  console.log("dsfesgergergergergergerg")
+  console.log(userDetails)
+  };
+
+  const handleSuggestionClick = (suggestion) => {
+    setInputText(suggestion);
+    
+
+  };
 
 
 
