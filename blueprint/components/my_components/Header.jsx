@@ -24,6 +24,8 @@ const Header = () => {
         </div>
 
         
+
+        
         <div className="md:hidden">
           <Button
             variant="ghost"
@@ -33,10 +35,26 @@ const Header = () => {
             <Menu />
           </Button>
         </div>
+
+        
+         {isMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden">
+            <div className="flex flex-col items-center py-4 space-y-4">
+              <Button
+                variant="ghost"
+                className="w-full text-gray-700 hover:text-blue-600"
+              >
+                Sign In
+              </Button>
+              <Button className="w-full bg-blue-500 hover:bg-blue-600">
+                Get Started
+              </Button>
+            </div>
+          </div>
+        )} 
       </div>
     </header>
   );
 };
 
 export default Header;
-
